@@ -3,4 +3,4 @@ const sum = require('./sum'); //preciso criar a minha varíavel de teste usando 
 test ("Somando dois números inteiros", () => {
     //valores de entrada - expect (esperado) - e depois o resultado (toBe)
     expect(sum(1,1)).toBe(2);
-});
+}); //no terminal: npm run test - para rodar o nosso teste
