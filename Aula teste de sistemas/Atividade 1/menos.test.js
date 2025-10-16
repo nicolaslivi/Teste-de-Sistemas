@@ -1,5 +1,5 @@
 const menos = require('./menos');
 
 test('Subtraindo', () => {
-    expected(menos(2, 2)).toBe(0);
+    expect(menos(2, 2)).toBe(0);
 });
