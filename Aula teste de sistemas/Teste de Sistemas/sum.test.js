@@ -59,3 +59,42 @@ test('mas existe stop em Cristopher', () => {
     expect('Cristopher').toMatch(/stop/);
 });
 
+const lista = ['fraldas', 'ovo', 'leite'];
+
+test('a lista de compras tem leite nela', () => {
+    expect(lista).toContain('leite'); //valida se contém o leite
+    expect(new Set(lista)).toContain('leite'); //new Set tira todos os repetidos e depois verifica se contém leite
+});
+
+// function compileAndroidCode() {
+//     throw new Error('you are using the wrong JDK!');
+//   }
+  
+//   test('compiling android goes as expected', () => {
+//     expect(() => compileAndroidCode()).toThrow();
+//     expect(() => compileAndroidCode()).toThrow(Error);
+  
+//     // Você também pode usar uma string que deve estar contida na mensagem de erro ou uma expressão regular
+//     expect(() => compileAndroidCode()).toThrow('you are using the wrong JDK');
+//     expect(() => compileAndroidCode()).toThrow(/JDK/);
+  
+//     // Ou você pode corresponder a uma mensagem de erro exata usando uma expressão regular como abaixo
+//     expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK$/); // Test fails
+//     expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK!$/); // Test pass
+//   });
+
+// beforeEach(() => {
+//     initializeCityDatabase();
+//   });
+  
+//   afterEach(() => {
+//     clearCityDatabase();
+//   });
+  
+//   test('city database has Vienna', () => {
+//     expect(isCity('Vienna')).toBeTruthy();
+//   });
+  
+//   test('city database has San Juan', () => {
+//     expect(isCity('San Juan')).toBeTruthy();
+//   });
