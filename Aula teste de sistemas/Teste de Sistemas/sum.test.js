@@ -66,6 +66,8 @@ test('a lista de compras tem leite nela', () => {
     expect(new Set(lista)).toContain('leite'); //new Set tira todos os repetidos e depois verifica se contém leite
 });
 
+// -------------------------------------------------------------------------------------------------------------------------
+
 // function compileAndroidCode() {
 //     throw new Error('you are using the wrong JDK!');
 //   }
@@ -83,6 +85,8 @@ test('a lista de compras tem leite nela', () => {
 //     expect(() => compileAndroidCode()).toThrow(/^you are using the wrong JDK!$/); // Test pass
 //   });
 
+// -------------------------------------------------------------------------------------------------------------------------
+
 // beforeEach(() => {
 //     initializeCityDatabase();
 //   });
@@ -98,3 +102,23 @@ test('a lista de compras tem leite nela', () => {
 //   test('city database has San Juan', () => {
 //     expect(isCity('San Juan')).toBeTruthy();
 //   });
+
+// -------------------------------------------------------------------------------------------------------------------------
+
+// describe('matching cities to foods', () => {
+//     // Applies only to tests in this describe block
+//     beforeEach(() => {
+//       return initializeFoodDatabase();
+//     });
+  
+//     test('Vienna <3 veal', () => {
+//       expect(isValidCityFoodPair('Vienna', 'Wiener Schnitzel')).toBe(true);
+//     });
+  
+//     test('San Juan <3 plantains', () => {
+//       expect(isValidCityFoodPair('San Juan', 'Mofongo')).toBe(true);
+//     });
+//   });
+
+// -------------------------------------------------------------------------------------------------------------------------
+
