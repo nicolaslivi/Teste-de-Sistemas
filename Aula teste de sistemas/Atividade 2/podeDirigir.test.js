@@ -36,3 +36,7 @@ test('Verifica se está correta a lógica usando not.toBe', () => {
     const seila = podeDirigir(12);
     expect(seila).not.toBe('Você pode dirigir!')
 });
+
+test('Precisa ter uma idade usando toBeNull', () => {
+    expect(null).toBeNull();
+});
