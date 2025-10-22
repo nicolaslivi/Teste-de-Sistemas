@@ -33,5 +33,6 @@ test('Diz que pode dirigir se for maior de 18 usando toBeGreaterThan', () => {
 });
 
 test('Verifica se está correta a lógica usando not.toBe', () => {
-    
-})
+    const seila = podeDirigir(12);
+    expect(seila).not.toBe('Você pode dirigir!')
+});
