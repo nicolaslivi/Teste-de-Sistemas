@@ -10,6 +10,12 @@ describe('template spec', () => {
     cy.get('button[id="plus"]').click();
     cy.get('button[id="4"]').click();
     cy.get('button[id="equal"]').click();
+
+    cy.get('button').contains('+').click();
+    cy.get('button').contains('1').click();
+    cy.get('button').contains('=').click();
+
+    cy.get('.display-container').should('have.text', '7');
   })
 })
 
